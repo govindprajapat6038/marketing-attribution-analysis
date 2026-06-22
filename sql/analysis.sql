@@ -1,0 +1,31 @@
+-- Total Revenue by Channel
+
+SELECT
+    Channel,
+    SUM(Revenue) AS Total_Revenue
+FROM marketing_data
+GROUP BY Channel
+ORDER BY Total_Revenue DESC;
+
+-- Total Cost by Channel
+SELECT Channel, SUM(Cost) AS Total_Cost
+FROM marketing_data
+GROUP BY Channel;
+
+-- Total Conversions by Channel
+SELECT Channel, SUM(Conversions) AS Total_Conversions
+FROM marketing_data
+GROUP BY Channel;
+
+-- ROAS by Channel
+SELECT Channel,
+       SUM(Revenue)/SUM(Cost) AS ROAS
+FROM marketing_data
+GROUP BY Channel;
+
+SELECT Campaign_ID,
+       SUM(Revenue) AS Total_Revenue
+FROM marketing_data
+GROUP BY Campaign_ID
+ORDER BY Total_Revenue DESC
+LIMIT 5;
