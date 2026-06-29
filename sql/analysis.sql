@@ -61,3 +61,10 @@ SELECT Channel,
 FROM marketing_data
 GROUP BY Channel
 ORDER BY Total_Clicks DESC;
+
+--top 5 cost campaign_id
+SELECT Campaign_ID,
+       Cost
+FROM marketing_data
+ORDER BY Cost DESC
+LIMIT 5;
