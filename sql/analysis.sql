@@ -54,3 +54,10 @@ SELECT Channel,
 FROM marketing_data
 GROUP BY Channel
 ORDER BY Avg_Revenue DESC;
+
+-- C1 total clicks
+SELECT Channel,
+       SUM(Clicks) AS Total_Clicks
+FROM marketing_data
+GROUP BY Channel
+ORDER BY Total_Clicks DESC;
