@@ -94,7 +94,27 @@ Measured user engagement for each channel.
 - Facebook achieved the highest conversion rate (11.23%).
 - Email had the lowest ROAS among all channels.
 - Instagram generated the highest profit (507,777).
+## 📈 Key Insights
 
-## Author
+- Instagram generated the highest total revenue.
+- Facebook achieved the highest ROAS.
+- Google Ads received the highest number of clicks.
+- Facebook recorded the highest conversion rate.
+- Instagram generated the highest profit.
+- Email had the lowest ROAS among all channels.
 
-Govind Prajapat
+---
+
+## 🎯 Skills Demonstrated
+
+- SQL Queries
+- Aggregate Functions
+- GROUP BY
+- ORDER BY
+- ROUND()
+- LIMIT
+- Business KPI Analysis
+- Marketing Analytics
+- Data Analysis
+- Git & GitHub
+
