@@ -68,3 +68,51 @@ SELECT Campaign_ID,
 FROM marketing_data
 ORDER BY Cost DESC
 LIMIT 5;
+-- revenue
+SELECT Campaign_ID,
+       Revenue
+FROM marketing_data
+ORDER BY Revenue ASC
+LIMIT 5;
+
+SELECT Channel,
+       ROUND(AVG(Cost),2) AS Avg_Cost
+FROM marketing_data
+GROUP BY Channel
+ORDER BY Avg_Cost DESC;
+
+SELECT Channel,
+       ROUND(SUM(Revenue)/SUM(Clicks),2) AS Revenue_Per_Click
+FROM marketing_data
+GROUP BY Channel
+ORDER BY Revenue_Per_Click DESC;
+
+SELECT Channel,
+       ROUND(SUM(Cost)/SUM(Clicks),2) AS Cost_Per_Click
+FROM marketing_data
+GROUP BY Channel
+ORDER BY Cost_Per_Click ASC;
+
+-- Top 5 Campaigns by Cost
+
+SELECT Campaign_ID,
+       Cost
+FROM marketing_data
+ORDER BY Cost DESC
+LIMIT 5;
+
+-- Top 5 Campaigns by Conversions
+
+SELECT Campaign_ID,
+       Conversions
+FROM marketing_data
+ORDER BY Conversions DESC
+LIMIT 5;
+
+-- Average Cost by Channel
+
+SELECT Channel,
+       ROUND(AVG(Cost),2) AS Avg_Cost
+FROM marketing_data
+GROUP BY Channel
+ORDER BY Avg_Cost DESC;
